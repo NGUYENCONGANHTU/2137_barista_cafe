@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body {
@@ -24,13 +28,13 @@
 
   <body>
     <header
-      class="relative flex justify-center items-center text-center h-screen bg-cover bg-center py-3"
+      class="relative flex justify-center items-center text-center h-screen bg-cover bg-center py-4"
       style="
         background-image: url('https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
       "
     >
       <nav
-        class="fixed top-0 w-11/12 flex justify-between items-center p-4 bg-black bg-opacity-30 rounded-lg mt-4 p-4"
+        class="fixed top-0 w-10/12 flex justify-between items-center p-5 bg-black bg-opacity-50 rounded-2xl mt-6 py-6 z-50"
       >
         <div class="flex items-center space-x-2">
           <img
@@ -40,8 +44,10 @@
           />
           <span class="text-lg font-bold">Barista</span>
         </div>
-        <div class="flex flex-1 justify-end items-center space-x-6">
-          <ul class="flex space-x-6 text-sm font-medium">
+        <div
+          class="flex flex-1 justify-end items-center space-x-8 max-lg:hidden"
+        >
+          <ul class="flex space-x-8 text-md font-bold">
             <li>
               <a href="#" class="text-yellow-400 hover:text-yellow-500">Home</a>
             </li>
@@ -64,27 +70,35 @@
             Reservation →
           </button>
         </div>
+        <div class="flex justify-end items-center hidden max-lg:block">
+          <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+        </div>
       </nav>
-      <div
-        class="relative bg-black bg-opacity-60 p-6 rounded-lg flex flex-col items-center mt-16"
-      >
-        <p class="text-sm text-yellow-400">welcome to Barista.co</p>
-        <h1 class="text-6xl font-bold mt-2">Cafe Klang</h1>
-        <p class="text-lg italic mt-2 text-gray-300">
-          your <span class="font-semibold text-white">favourite</span> coffee
-          daily lives.
-        </p>
-        <div class="mt-6 flex space-x-4">
-          <button
-            class="bg-transparent text-white border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black"
-          >
-            Our Story
-          </button>
-          <button
-            class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600"
-          >
-            Check Menu
-          </button>
+      <div class="ralative flex justify-center items-center">
+        <div
+          class="absolute w-[350px] h-[230px] m-4 rounded-2xl rotate-[138deg] bg-black bg-opacity-60"
+        ></div>
+        <div class="absolute w-[350px] h-[260px] m-4 rounded-2xl space-y-6">
+          <p class="text-md text-yellow-500 opacity-80 lg:ml-2">
+            welcome to Barista.co
+          </p>
+          <h1 class="text-6xl font-bold mt-4">Cafe Klang</h1>
+          <p class="text-lg italic mt-2 text-gray-300">
+            your <span class="font-semibold text-white">favorite</span> coffee
+            daily lives.
+          </p>
+          <div class="mt-6 flex space-x-14">
+            <button
+              class="bg-transparent font-semibold text-white px-6 py-2 rounded-full hover:bg-white hover:text-[#bc6c25]"
+            >
+              Our Story
+            </button>
+            <button
+              class="bg-[#bc6c25] text-white px-6 py-2 rounded-full font-semibold hover:bg-yellow-600 py-3"
+            >
+              Check Menu
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -94,21 +108,28 @@
       id="Home"
     >
       <div class="flex max-w-6xl space-x-8 items-center">
-        <div class="relative w-1/2">
-          <video autoplay loop muted class="rounded-lg shadow-lg w-3/4 mx-auto">
+        <div class="relative w-1/2 rounded-2xl">
+          <video
+            autoplay
+            loop
+            muted
+            class="rounded-lg shadow-lg opacity-50 w-full h-[650px] object-cover rounded-lg shadow-lg z-10"
+          >
             <source
+              class="absolute"
               src="./video/9046237-uhd_1440_2560_24fps.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
           <div
-            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-6 text-white font-semibold text-lg"
+            class="absolute rounded-2xl inset-0 bg-gradient-to-t from-orange-300 to-transparent p-6 text-white font-semibold text-lg flex items-end"
           >
             We Started Since 2009.<br />Best Cafe in Klang.
           </div>
         </div>
         <div class="w-1/2 flex flex-col justify-center">
+          <h4 class="italic">Barista.co</h4>
           <h2 class="text-3xl font-bold">Cafe KL</h2>
           <p class="mt-4 text-lg">
             The café had been in the town for as long as anyone could remember,
@@ -117,10 +138,10 @@
           <p class="mt-4 text-lg">
             The café was run by a friendly and hospitable couple, Mr. and Mrs.
             Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by
-            <a href="#" class="text-yellow-400">Tooplate</a>.
+            <a href="#" class="text-yellow-400">Toplate</a>.
           </p>
           <button
-            class="w-48 mt-6 border-white border hover:text-orange-600 text-white text-black px-3 py-2 rounded-3xl hover:bg-gray-200"
+            class="w-48 mt-6 border-white border hover:text-[#bc6c25] text-white text-black px-3 py-3 rounded-3xl hover:bg-gray-200"
           >
             Meet Baristas
           </button>
@@ -128,10 +149,10 @@
       </div>
     </section>
 
-    <section class="py-16 bg-[#b07642] text-center" id="About">
+    <section class="py-16 bg-[#b78752] text-center" id="About">
       <h3 class="text-sm text-gray-300">Creative Baristas</h3>
       <h2 class="text-4xl font-bold mb-8">Meet People</h2>
-      <div class="flex justify-center gap-6">
+      <div class="flex justify-center gap-6 z-1 opacity-75">
         <div class="relative w-1/5">
           <img
             src="https://www.tooplate.com/templates/2137_barista_cafe/images/team/portrait-elegant-old-man-wearing-suit.jpg"
@@ -200,11 +221,10 @@
         class="absolute inset-0 bg-cover bg-center"
         style="
           background-image: url('https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
-          filter: blur(5px);
         "
       ></div>
       <div
-        class="relative max-w-6xl mx-auto flex justify-between gap-12 backdrop-blur-md p-12 rounded-lg"
+        class="relative max-w-7xl mx-auto flex justify-between gap-12 p-12 rounded-lg"
       >
         <div class="bg-black bg-opacity-60 p-6 rounded-lg w-1/2">
           <h3 class="text-yellow-400 text-sm italic">Delicious Menu</h3>
@@ -236,7 +256,7 @@
           </ul>
         </div>
         <div class="bg-black bg-opacity-60 p-6 rounded-lg w-1/2">
-          <h3 class="text-yellow-400 text-sm italic">Favourite Menu</h3>
+          <h3 class="text-yellow-400 text-sm italic">Favorite Menu</h3>
           <h2 class="text-3xl font-bold mb-6">Coffee</h2>
           <ul
             class="text-left space-y-8 border-t border-gray-500 pt-10 divide-y divide-gray-500"
