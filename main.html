@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Klang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2e1e16;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="relative flex justify-center items-center text-center h-screen bg-cover bg-center py-3"
+      style="
+        background-image: url('https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
+      "
+    >
+      <nav
+        class="fixed top-0 w-11/12 flex justify-between items-center p-4 bg-black bg-opacity-30 rounded-lg mt-4 p-4"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            src="https://www.tooplate.com/templates/2137_barista_cafe/images/coffee-beans.png"
+            alt="Barista Logo"
+            class="w-10 h-10 bg-white"
+          />
+          <span class="text-lg font-bold">Barista</span>
+        </div>
+        <div class="flex flex-1 justify-end items-center space-x-6">
+          <ul class="flex space-x-6 text-sm font-medium">
+            <li>
+              <a href="#" class="text-yellow-400 hover:text-yellow-500">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-500">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-500">Our Menu</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-500">Reviews</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-500">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="border border-white text-white px-4 py-2 rounded-full hover:bg-yellow-500 hover:text-black"
+          >
+            Reservation →
+          </button>
+        </div>
+      </nav>
+      <div
+        class="relative bg-black bg-opacity-60 p-6 rounded-lg flex flex-col items-center mt-16"
+      >
+        <p class="text-sm text-yellow-400">welcome to Barista.co</p>
+        <h1 class="text-6xl font-bold mt-2">Cafe Klang</h1>
+        <p class="text-lg italic mt-2 text-gray-300">
+          your <span class="font-semibold text-white">favourite</span> coffee
+          daily lives.
+        </p>
+        <div class="mt-6 flex space-x-4">
+          <button
+            class="bg-transparent text-white border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black"
+          >
+            Our Story
+          </button>
+          <button
+            class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600"
+          >
+            Check Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="flex justify-center items-center py-16 bg-[#4a2c23]"
+      id="Home"
+    >
+      <div class="flex max-w-6xl space-x-8 items-center">
+        <div class="relative w-1/2">
+          <video autoplay loop muted class="rounded-lg shadow-lg w-3/4 mx-auto">
+            <source
+              src="./video/9046237-uhd_1440_2560_24fps.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-6 text-white font-semibold text-lg"
+          >
+            We Started Since 2009.<br />Best Cafe in Klang.
+          </div>
+        </div>
+        <div class="w-1/2 flex flex-col justify-center">
+          <h2 class="text-3xl font-bold">Cafe KL</h2>
+          <p class="mt-4 text-lg">
+            The café had been in the town for as long as anyone could remember,
+            and it had become a beloved institution among the locals.
+          </p>
+          <p class="mt-4 text-lg">
+            The café was run by a friendly and hospitable couple, Mr. and Mrs.
+            Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by
+            <a href="#" class="text-yellow-400">Tooplate</a>.
+          </p>
+          <button
+            class="w-48 mt-6 border-white border hover:text-orange-600 text-white text-black px-3 py-2 rounded-3xl hover:bg-gray-200"
+          >
+            Meet Baristas
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#b07642] text-center" id="About">
+      <h3 class="text-sm text-gray-300">Creative Baristas</h3>
+      <h2 class="text-4xl font-bold mb-8">Meet People</h2>
+      <div class="flex justify-center gap-6">
+        <div class="relative w-1/5">
+          <img
+            src="https://www.tooplate.com/templates/2137_barista_cafe/images/team/portrait-elegant-old-man-wearing-suit.jpg"
+            alt="Steve"
+            class="rounded-lg shadow-lg w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-4 text-white font-semibold text-lg"
+          >
+            Steve
+            <span class="text-sm bg-white text-black px-2 py-1 rounded"
+              >Boss</span
+            >
+          </div>
+        </div>
+        <div class="relative w-1/5">
+          <img
+            src="https://www.tooplate.com/templates/2137_barista_cafe/images/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg"
+            alt="Sandra"
+            class="rounded-lg shadow-lg w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-4 text-white font-semibold text-lg"
+          >
+            Sandra
+            <span class="text-sm bg-white text-black px-2 py-1 rounded"
+              >Manager</span
+            >
+          </div>
+        </div>
+        <div class="relative w-1/5">
+          <img
+            src="https://www.tooplate.com/templates/2137_barista_cafe/images/team/small-business-owner-drinking-coffee.jpg"
+            alt="Jackson"
+            class="rounded-lg shadow-lg w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-4 text-white font-semibold text-lg"
+          >
+            Jackson
+            <span class="text-sm bg-white text-black px-2 py-1 rounded"
+              >Senior</span
+            >
+          </div>
+        </div>
+        <div class="relative w-1/5">
+          <img
+            src="https://www.tooplate.com/templates/2137_barista_cafe/images/team/smiley-business-woman-working-cashier.jpg"
+            alt="Michelle"
+            class="rounded-lg shadow-lg w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-orange-600 to-transparent p-4 text-white font-semibold text-lg"
+          >
+            Michelle
+            <span class="text-sm bg-white text-black px-2 py-1 rounded"
+              >Barista</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#8a5a3c] text-center relative" id="Our Menu">
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="
+          background-image: url('https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
+          filter: blur(5px);
+        "
+      ></div>
+      <div
+        class="relative max-w-6xl mx-auto flex justify-between gap-12 backdrop-blur-md p-12 rounded-lg"
+      >
+        <div class="bg-black bg-opacity-60 p-6 rounded-lg w-1/2">
+          <h3 class="text-yellow-400 text-sm italic">Delicious Menu</h3>
+          <h2 class="text-3xl font-bold mb-6">Breakfast</h2>
+          <ul
+            class="text-left space-y-8 border-t border-gray-500 pt-10 divide-y divide-gray-500"
+          >
+            <li class="flex justify-between">
+              <span>Pancakes</span><span>$12.50</span>
+            </li>
+            <li class="flex justify-between pt-10">
+              <span
+                >Toasted Waffle
+                <span class="text-red-500 line-through">$14.50</span>
+                $12.00</span
+              >
+            </li>
+            <li class="flex justify-between pt-10">
+              <span
+                >Fried Chips
+                <span class="bg-yellow-500 px-2 py-1 text-xs rounded"
+                  >Recommend</span
+                ></span
+              ><span>$15.00</span>
+            </li>
+            <li class="flex justify-between pt-10">
+              <span>Banana Cakes</span><span>$18.00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-black bg-opacity-60 p-6 rounded-lg w-1/2">
+          <h3 class="text-yellow-400 text-sm italic">Favourite Menu</h3>
+          <h2 class="text-3xl font-bold mb-6">Coffee</h2>
+          <ul
+            class="text-left space-y-8 border-t border-gray-500 pt-10 divide-y divide-gray-500"
+          >
+            <li class="flex justify-between">
+              <span
+                >Latte
+                <span class="text-red-500 line-through">$12.50</span>
+                $7.50</span
+              >
+            </li>
+            <li class="flex justify-between pt-10">
+              <span
+                >White Coffee
+                <span class="bg-yellow-500 px-2 py-1 text-xs rounded"
+                  >Recommend</span
+                ></span
+              ><span>$6.90</span>
+            </li>
+            <li class="flex justify-between pt-10">
+              <span>Chocolate Milk</span><span>$5.50</span>
+            </li>
+            <li class="flex justify-between pt-10">
+              <span>Greentea</span><span>$7.25</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 text-center relative" id="Reviews">
+      <h3 class="text-sm text-gray-300">Reviews by Customers</h3>
+      <h2 class="text-4xl font-bold mb-12">Testimonials</h2>
+      <div class="relative max-w-5xl mx-auto">
+        <!-- Vertical Line -->
+        <div
+          class="absolute left-1/2 top-0 h-full w-1 bg-white transform -translate-x-1/2"
+        ></div>
+        <div class="flex flex-col items-center space-y-12">
+          <!-- First Testimonial -->
+          <div class="relative flex justify-start w-full max-w-3xl">
+            <div
+              class="bg-[#b07642] text-white p-6 rounded-lg shadow-lg w-2/5 relative"
+            >
+              <div class="flex items-center space-x-4">
+                <img
+                  src="https://www.tooplate.com/templates/2137_barista_cafe/images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                  alt="Sandra"
+                  class="w-12 h-12 rounded-full"
+                />
+                <div>
+                  <h4 class="font-bold">Sandra</h4>
+                  <p class="text-sm text-gray-200">Customer</p>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </p>
+              <div class="mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <!-- Second Testimonial -->
+          <div class="relative flex justify-end w-full max-w-3xl">
+            <div
+              class="bg-[#b07642] text-white p-6 rounded-lg shadow-lg w-2/5 relative"
+            >
+              <div class="flex items-center space-x-4">
+                <img
+                  src="https://www.tooplate.com/templates/2137_barista_cafe/images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                  alt="Don"
+                  class="w-12 h-12 rounded-full"
+                />
+                <div>
+                  <h4 class="font-bold">Don</h4>
+                  <p class="text-sm text-gray-200">Customer</p>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </p>
+              <div class="mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <!-- Third Testimonial -->
+          <div class="relative flex justify-start w-full max-w-3xl">
+            <div
+              class="bg-[#b07642] text-white p-6 rounded-lg shadow-lg w-2/5 relative"
+            >
+              <div class="flex items-center space-x-4">
+                <img
+                  src="https://www.tooplate.com/templates/2137_barista_cafe/images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
+                  alt="Olivia"
+                  class="w-12 h-12 rounded-full"
+                />
+                <div>
+                  <h4 class="font-bold">Olivia</h4>
+                  <p class="text-sm text-gray-200">Customer</p>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </p>
+              <div class="mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative bg-cover bg-center py-16"
+      style="background-image: url('contact-background.jpg')"
+      id="Contact"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-orange-600 to-transparent opacity-80"
+      ></div>
+      <div class="relative max-w-6xl mx-auto flex justify-between gap-12 p-10">
+        <div class="w-1/2">
+          <h3 class="text-lg text-gray-200">Say Hello</h3>
+          <h2 class="text-4xl font-bold mb-6">Contact</h2>
+          <form class="space-y-6">
+            <div class="flex space-x-4">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-1/2 p-3 border border-gray-300 rounded-lg bg-transparent text-white"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-1/2 p-3 border border-gray-300 rounded-lg bg-transparent text-white"
+              />
+            </div>
+            <textarea
+              placeholder="Message"
+              class="w-full p-3 border border-gray-300 rounded-lg bg-transparent text-white h-32"
+            ></textarea>
+            <button
+              class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="w-1/2 flex justify-center items-center">
+          <iframe
+            class="rounded-lg shadow-lg"
+            width="100%"
+            height="250"
+            src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="text-center text-white mt-12">
+        <p>📍 Bandra West, Mumbai, Maharashtra 400050, India</p>
+        <p>📞 Phone: (65) 305 2409 671 | ✉️ Email: hello@barista.co</p>
+        <p>
+          🕒 Opening Hours: Mon - Fri: 9:00 - 18:00 | Sat: 11:00 - 16:30 | Sun:
+          Closed
+        </p>
+        <p class="mt-6 text-sm">
+          Copyright © Barista Cafe 2048 - Design: Tooplate
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
